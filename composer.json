@@ -1,5 +1,5 @@
 {
-    "name": "gridgain/gridgain-client",
+    "name": "gridgain/client",
     "type": "library",
     "description": "PHP Client for GridGain Community Edition",
     "keywords": ["gridgain", "community", "client"],
