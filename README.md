@@ -36,7 +36,7 @@ require_once "<gridgain_client_path>/vendor/autoload.php";
 
 ## Full Examples ##
 
-PHP Thin Client contains fully workable [examples](./examples) to demonstrate the main behavior of the client.
+PHP Thin Client contains [examples](./examples) to demonstrate the main behavior of the client.
 
 ### Examples Installation ###
 
@@ -44,7 +44,7 @@ Examples are installed during [installation of the whole GridGain client from so
 
 ### Examples Setup and Running ###
 
-1. Run Apache GridGain server - locally or remotely - if not run yet.
+1. Run GridGain server - locally or remotely - if not run yet.
 
 2. If needed, modify `ENDPOINT` constant in an example source file - GridGain node endpoint. The default value is `127.0.0.1:10800`.
 

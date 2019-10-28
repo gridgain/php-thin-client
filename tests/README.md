@@ -5,11 +5,6 @@ PHP Client for GridGain contains [PHPUnit](https://phpunit.de/) tests to check t
 - examples executors which run all examples except AuthTlsExample
 - AuthTlsExample executor
 
-The client has been tested on the following platforms:
-- Ubuntu 14.04 LTS 32-bit
-- Ubuntu 14.04 LTS 64-bit
-- Windows 10 Home 64-bit
-
 ## Tests Installation ##
 
 1. Download GridGain PHP client sources to `gridgain_client_path`

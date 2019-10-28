@@ -1,10 +1,10 @@
 # Examples Description #
 
-## Sql Example ##
+## SQL Example ##
 
 Source: [SqlExample.php](./SqlExample.php)
 
-This example shows primary APIs to use with GridGain as with an SQL database:
+This example demonstrates GridGain usage as an SQL database:
 - connects to a node
 - creates a cache, if it doesn't exist
 - creates tables (CREATE TABLE)
@@ -30,7 +30,7 @@ This example demonstrates basic Cache, Key-Value Queries and Scan Query operatio
   - ScanQuery
 - destroys the cache
 
-## Sql Query Entries Example ##
+## SQL Query Entries Example ##
 
 Source: [SqlQueryEntriesExample.php](./SqlQueryEntriesExample.php)
 
@@ -41,7 +41,7 @@ This example demonstrates basic Cache, Key-Value Queries and SQL Query operation
 - reads data from the cache using SQL Query
 - destroys the cache
 
-## Auth Tls Example ##
+## Auth TLS Example ##
 
 Source: [AuthTlsExample.php](./AuthTlsExample.php)
 
@@ -51,8 +51,8 @@ This example demonstrates how to establish a secure connection to an GridGain no
 - connects to a node using TLS and providing username/password
 - creates a cache, if it doesn't exist
   - specifies key and value type of the cache
-- put data of primitive types into the cache
-- get data from the cache
+- puts data of primitive types into the cache
+- gets data from the cache
 - destroys the cache
 
 ### Additional Setup for AuthTlsExample ###
@@ -106,5 +106,5 @@ Default values are `localhost:10800`, `localhost:10801`, `localhost:10802` respe
 
 5. Shut down all the nodes. You will see the client being stopped after failing to connect to each of the nodes.
 
-Note, you have about 50 seconds after the example is started to play with the nodes. After this time the examples finishes.
+Note, you have about 50 seconds after the example is started to play with the nodes. After this time the example finishes.
 
