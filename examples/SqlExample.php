@@ -24,7 +24,7 @@ use Apache\Ignite\Cache\CacheInterface;
 use Apache\Ignite\Cache\CacheConfiguration;
 use Apache\Ignite\Query\SqlFieldsQuery;
 
-// This example shows primary APIs to use with GridGain as with an SQL database:
+// This example demonstrates GridGain usage as an SQL database:
 // - connects to a node
 // - creates a cache, if it doesn't exist
 // - creates tables (CREATE TABLE)

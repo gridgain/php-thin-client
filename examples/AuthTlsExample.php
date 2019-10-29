@@ -28,8 +28,8 @@ use Apache\Ignite\Type\ObjectType;
 // - connects to a node using TLS and providing username/password
 // - creates a cache, if it doesn't exist
 //   - specifies key and value type of the cache
-// - put data of primitive types into the cache
-// - get data from the cache
+// - puts data of primitive types into the cache
+// - gets data from the cache
 // - destroys the cache
 class AuthTlsExample
 {

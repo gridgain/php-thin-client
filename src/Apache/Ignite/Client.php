@@ -36,7 +36,7 @@ use Apache\Ignite\Internal\Cache;
  *
  * If you open it for the first time, start from the Client class.
  *
- * For the usage guide and other instructions see accompanied Apache Ignite PHP %Client documentation.
+ * For the usage guide and other instructions see accompanied GridGain PHP %Client documentation.
  */
 
 /**

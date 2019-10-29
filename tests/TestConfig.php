@@ -24,11 +24,11 @@ class TestConfig
 
     public static function init(): void
     {
-        $endpoints = getenv('APACHE_IGNITE_CLIENT_ENDPOINTS');
+        $endpoints = getenv('GRIDGAIN_CLIENT_ENDPOINTS');
         if ($endpoints) {
             TestConfig::$endpoints = explode(',', $endpoints);
         }
-        $debug = getenv('APACHE_IGNITE_CLIENT_DEBUG');
+        $debug = getenv('GRIDGAIN_CLIENT_DEBUG');
         TestConfig::$debug = ($debug === 'true' || $debug === '1');
     }
 }
