@@ -23,11 +23,11 @@ use Apache\Ignite\Internal\Binary\MessageBuffer;
 use Apache\Ignite\Internal\Utils\ArgumentChecker;
 
 /**
- * Class representing one Query Index element of QueryEntity of GridGain CacheConfiguration.
+ * Class representing one Query Index element of QueryEntity of Ignite CacheConfiguration.
  *
  * All configuration settings are optional and have defaults which are defined on a server side.
  *
- * See GridGain documentation for details of every configuration setting.
+ * See Apache Ignite documentation for details of every configuration setting.
  */
 class QueryIndex
 {

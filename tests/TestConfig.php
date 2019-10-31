@@ -21,14 +21,14 @@ class TestConfig
 {
     public static $endpoints = ['127.0.0.1:10800'];
     public static $debug = false;
-
+    
     public static function init(): void
     {
-        $endpoints = getenv('GRIDGAIN_CLIENT_ENDPOINTS');
+        $endpoints = getenv('APACHE_IGNITE_CLIENT_ENDPOINTS');
         if ($endpoints) {
             TestConfig::$endpoints = explode(',', $endpoints);
         }
-        $debug = getenv('GRIDGAIN_CLIENT_DEBUG');
+        $debug = getenv('APACHE_IGNITE_CLIENT_DEBUG');
         TestConfig::$debug = ($debug === 'true' || $debug === '1');
     }
 }

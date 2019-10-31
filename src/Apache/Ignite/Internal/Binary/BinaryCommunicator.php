@@ -36,11 +36,9 @@ use Apache\Ignite\Exception\ClientException;
 
 class BinaryCommunicator
 {
-    const UUID_BYTE_ORDER = array(7,6,5,4,3,2,1,0,15,14,13,12,11,10,9,8);
-
     private $socket;
     private $typeStorage;
-
+    
     public function __construct(ClientFailoverSocket $socket)
     {
         $this->socket = $socket;
@@ -51,7 +49,7 @@ class BinaryCommunicator
     {
         $this->socket->send($opCode, $payloadWriter, $payloadReader);
     }
-
+    
     public function getTypeStorage(): BinaryTypeStorage
     {
         return $this->typeStorage;
@@ -253,9 +251,9 @@ class BinaryCommunicator
 
     private function readUUID(MessageBuffer $buffer): array
     {
-        $result = array_fill(0, BinaryUtils::getSize(ObjectType::UUID), null);
+        $result = [];
         for ($i = 0; $i < BinaryUtils::getSize(ObjectType::UUID); $i++) {
-            $result[self::UUID_BYTE_ORDER[$i]] = $buffer->readByte(false);
+            array_push($result, $buffer->readByte(false));
         }
         return $result;
     }
@@ -393,7 +391,7 @@ class BinaryCommunicator
     private function writeUUID(MessageBuffer $buffer, array $value): void
     {
         for ($i = 0; $i < count($value); $i++) {
-            $buffer->writeByte($value[self::UUID_BYTE_ORDER[$i]], false);
+            $buffer->writeByte($value[$i], false);
         }
     }
 
